@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    {{/*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*/}}
+
+</head>
+<body>
+<div class="card col-6 mx-auto my-5 shadow">
+    <div class="card-body">
+        <h5 class="card-title">Currency Converter</h5>
+    <form class="" action="/convert" method="get">
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount" name="currency_amount"  placeholder="Enter Amount" min="0">
+        </div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="from">From</label>
+                <select class="form-control" name="fromOption" id="from">
+                    <option selected>USD</option>
+                    <option>AED</option>
+                    <option>CHF</option>
+                    <option>CNY</option>
+                    <option>JPY</option>
+                    <option>ETB</option>
+                    <option>EUR</option>
+
+                </select>
+            </div>
+            <div class="form-group col-6">
+                <label for="to">To</label>
+                <select class="form-control" name="toOption" id="to">
+                    <option selected>ETB</option>
+                    <option>AED</option>
+                    <option>CHF</option>
+                    <option>CNY</option>
+                    <option>JPY</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group mx-auto ">
+            <button type="submit" class="btn btn-primary btn-lg ">Convert</button>
+        </div>
+
+
+    </form>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

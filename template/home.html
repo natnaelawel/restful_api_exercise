@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    {{/*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >*/}}
+
+</head>
+<body>
+<div class="card col-6 mx-auto my-5 shadow ">
+        <div class="card-header">
+            Currency Converter
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <h4 class="card-title col-6">From {{.From}} TO {{.To}}</h4>
+                <h6 class="col-6  text-right">Date: {{.Date}}</h6>
+            </div>
+
+            <p class="card-text">Conversion Rate: 1 {{.From}} = {{printf "%.4f" .Currency}} {{.To}}</p>
+            <p class="card-text">{{.EnteredValue}} {{.From}} = {{.Value}} {{.To}}</p>
+            <a href="/" class="btn btn-primary">Back</a>
+        </div>
+    </div>
+</body>
+</html>
